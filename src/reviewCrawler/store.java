@@ -1,11 +1,11 @@
 package reviewCrawler;
 
-import zero.crawler;
 import edu.uci.ics.crawler4j.crawler.CrawlConfig;
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;
 import edu.uci.ics.crawler4j.robotstxt.RobotstxtConfig;
 import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
+import zero.crawler;
 
 public class store {
 
@@ -14,11 +14,11 @@ public class store {
 	}
 	
 	/**
-	 * Implements a class which specifies the 
-	 * seed files to crawl, 
-	 * location to store "uncleaned" crawled data and 
+	 * Implements a class which specifies the
+	 * seed files to crawl,
+	 * location to store "uncleaned" crawled data and
 	 * the number of concurrent threads
-	 * 
+	 *
 	 * @param args
 	 * @throws Exception
 	 */
@@ -51,7 +51,7 @@ public class store {
          * URLs that are fetched and then the crawler starts following links
          * which are found in these pages
          */
-        controller.addSeed("http://www.ask.com");
+        controller.addSeed("http://www.ebay.com");
         
         //controller.addSeed("http://rrminerals.com");
         //controller.addSeed("http://shareportt.com/");
@@ -61,7 +61,6 @@ public class store {
          * will reach the line after this only when crawling is finished.
          */
         //controller.start(reviewCrawler.crawl.class, crawl.singleCrawl);
-        controller.startNonBlocking(crawl.class, crawler.optimalCrawl);
-        //(crawl.class, crawler.multiCrawl);
+        controller.startNonBlocking(crawl.class, crawler.multiCrawl);
     }
 }
