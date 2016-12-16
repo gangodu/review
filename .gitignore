@@ -1,6 +1,11 @@
-
-.classpath
-
-.settings/org.eclipse.m2e.core.prefs
-
-.classpath
+.idea
+.settings
+bin/*
+target/*
+data/cleaned
+data/extracted
+data/failed
+data/seeder
+data/harvested/crawled/*
+data/harvested/crawling/*
+review.iml
