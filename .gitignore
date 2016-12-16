@@ -5,7 +5,6 @@ target/*
 data/cleaned
 data/extracted
 data/failed
-data/seeder
-data/harvested/crawled/*
-data/harvested/crawling/*
+data/seed
+data/harvested
 review.iml
